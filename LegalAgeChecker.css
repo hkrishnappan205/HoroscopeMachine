@@ -1,0 +1,42 @@
+body
+{
+  background-color: green;
+}
+#title
+{
+  font-style: bold;
+  font-size: 30px;
+  color: white;
+  font-family: cursive;
+}
+#box
+{
+  width: 380px;
+  height: 40px;
+  color: red;
+  background-color: black;
+  font-size: 20px;
+  border-color: red;
+  border-width: thick;
+  text-align: center;
+}
+#jj
+{
+  width: 150px;
+  height: 40px;
+  color: red;
+  background-color: black;
+  font-size: 20px;
+  border-color: red;
+  border-width: thick;
+}
+#Reset
+{
+  width: 150px;
+  height: 40px;
+  color: red;
+  background-color: black;
+  font-size: 20px;
+  border-color: red;
+  border-width: thick;
+}

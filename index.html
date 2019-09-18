@@ -1,0 +1,146 @@
+<html>
+<head>
+<link rel = "stylesheet" href = "Horoscope.css">
+<title>HOROSCOPE MACHINE</title>
+<script>
+  function scope()
+  {
+    var v1 = document.getElementById('v1').value;
+    var v2 = document.getElementById('v2').value;
+    var message = "";
+    if(v1 === 'jan' && v2 >= 20 || v1 === 'feb' && v2 <= 18 )
+    {
+      message = "YOUR ASTROLOGICAL SIGN IS A AQUARIUS - DRUGS MAKE YOU SMARTER...";
+      var p = "<img src = 'aqu.jpg' width = '300px' height = '300px' border = 5px' color = 'blue'>"
+      document.getElementById('pic').innerHTML = p;
+    }
+    else if (v1 === 'feb' && v2 >= 19 || v1 === 'mar' && v2 <= 20 )
+    {
+      message = "YOUR ASTROLOGICAL SIGN IS A PISCES - FLY TO NORTH KOREA AND LIVE THERE";
+      var p = "<img src = 'pi.jpg' width = '300px' height = '300px' border = '5px' color = 'blue'>"
+      document.getElementById('pic').innerHTML = p;
+    }
+    else if (v1 === 'mar' && v2 >= 21 || v1 === 'apr' && v2 <= 19 )
+    {
+      message = "YOUR ASTROLOGICAL SIGN IS A ARIES - GO GO FOR A RIDE IN A STRANGERS BLACK VAN";
+      var p = "<img src = 'air.jpg' width = '300px' height = '300px' border = '5px' color = 'blue'>"
+      document.getElementById('pic').innerHTML = p;
+    }
+    else if (v1 === 'apr' && v2 >= 20 || v1 === 'may' && v2 <= 20 )
+    {
+      message = "YOUR ASTROLOGICAL SIGN IS A TAURUS - GIVE SOMEONE SOME BULL TODAY";
+      var p = "<img src = 'ta.jpg' width = '300px' height = '300px' border = '5px' color = 'blue'>"
+      document.getElementById('pic').innerHTML = p;
+    }
+    else if (v1 === 'may' && v2 >= 21 || v1 === 'jun' && v2 <= 20 )
+    {
+      message = "YOUR ASTROLOGICAL SIGN IS A GEMINI - DONT STEP ON A CRACK BECAUSE YOU MIGHT BREAK YOUR MOTHERS BACK";
+      var p = "<img src = 'ge.jpg' width = '300px' height = '300px' border = '5px' color = 'blue'>"
+      document.getElementById('pic').innerHTML = p;
+    }
+    else if (v1 === 'jun' && v2 >= 21 || v1 === 'jul' && v2 <= 22 )
+    {
+      message = "YOUR ASTROLOGICAL SIGN IS A CANCER - LETS HOPE THERE WILL BE A CURE FOR CANCER S00N";
+      var p = "<img src = 'can.jpg' width = '300px' height = '300px' border = '5px' color = 'blue'>"
+      document.getElementById('pic').innerHTML = p;
+    }
+    else if (v1 === 'jul' && v2 >= 23 || v1 === 'aug' && v2 <= 22 )
+    {
+      message = "YOUR ASTROLOGICAL SIGN IS A LEO - MAKE SURE YOU SLEEP TIGHT AND DONT LET THE BED BUGS BITE";
+      var p = "<img src = 'leo.jpg' width = '300px' height = '300px' border = '5px' color = 'blue'>"
+      document.getElementById('pic').innerHTML = p;
+    }
+    else if (v1 === 'aug' && v2 >= 23 || v1 === 'sep' && v2 <= 22 )
+    {
+      message = "YOUR ASTROLOGICAL SIGN IS A VIRGO - GO ROB A BANK TODAY FOR SOME EXTRA MONEY";
+      var p = "<img src = 'vir.jpg' width = '300px' height = '300px' border = '5px' color = 'blue'>"
+      document.getElementById('pic').innerHTML = p;
+    }
+    else if (v1 === 'sep' && v2 >= 23 || v1 === 'oct' && v2 <= 22 )
+    {
+      message = "YOUR ASTROLOGICAL SIGN IS A LIBRA - DONT GET HIT BY A TRUCK WITHOUT HAVING A TRUCK OF YOUR OWN";
+      var p = "<img src = 'lib.jpg' width = '300px' height = '300px' border = '5px' color = 'blue'>"
+      document.getElementById('pic').innerHTML = p;
+    }
+    else if (v1 === 'oct' && v2 >= 23 || v1 === 'nov' && v2 <= 21 )
+    {
+      message = "YOUR ASTROLOGICAL SIGN IS A SCORPIO - SIT ON A SCORPION FOR LUCK";
+      var p = "<img src = 'scor.jpg' width = '300px' height = '300px' border = '5px' color = 'blue'>"
+      document.getElementById('pic').innerHTML = p;
+    }
+    else if (v1 === 'nov' && v2 >= 22 || v1 === 'dec' && v2 <= 21 )
+    {
+      message = "YOUR ASTROLOGICAL SIGN IS A SAGITTARIUS - GO TO AREA 51 AND SEE THE ALIENS";
+      var p = "<img src = 'sag.jpg' width = '300px' height = '300px' border = '5px' color = 'blue'>"
+      document.getElementById('pic').innerHTML = p;
+    }
+    else if (v1 === 'dec' && v2 >= 22 || v1 === 'jan' && v2 <= 19 )
+    {
+      message = "YOUR ASTROLOGICAL SIGN IS A CAPRICORN - MAKE SURE YOUR COOL LIKE YOUR MOM";
+      var p = "<img src = 'cap.jpg' width = '300px' height = '300px' border = '5px' color = 'blue'>"
+      document.getElementById('pic').innerHTML = p;
+    }
+    else
+    {
+      message = "ERROR - INVALID ENTRY"
+    }
+    document.getElementById('out').innerHTML = message;
+  }
+</script>
+</head>
+<body>
+<h1 id = h1>--WELCOME TO THE HOROSCOPE MACHINE--<h1>
+<hr id = "line">
+<select id= "v1">
+<option value="jan">January</option>
+<option value="feb">Feburay</option>
+<option value="mar">March</option>
+<option value="apr">April</option>
+<option value="may">May</option>
+<option value="jun">June</option>
+<option value="jul">July</option>
+<option value="aug">August</option>
+<option value="sep">September</option>
+<option value="oct">October</option>
+<option value="nov">November</option>
+<option value="dec">December</option>
+</select>
+<select id= "v2">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<input id = "bu" type = "button" value = "CLICK" onclick = "scope()">
+<span id = "astroSign"></span><span id = "msg"></span><br/>
+<div id = "out"></div><br/>
+<div id = "pic"></div>
+</body>
+</html>
